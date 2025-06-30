@@ -1,4 +1,12 @@
 terraform {
+  cloud {
+    organization = "YordanOrg"
+
+    workspaces {
+      name = "iac-digitalocean"
+    }
+  }
+
   required_providers {
     digitalocean = {
       source  = "digitalocean/digitalocean"
@@ -10,3 +18,4 @@ terraform {
 provider "digitalocean" {
   token = var.DO_TOKEN
 }
+
