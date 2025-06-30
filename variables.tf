@@ -1,7 +1,7 @@
-variable "ssh_pub_key_path" {
-  description = "Path to ssh key"
+variable "ssh_pub_key" {
+  description = "SSH public key string"
   type        = string
-  default     = "~/.ssh/id_rsa.pub"
+  sensitive   = false
 }
 
 variable "DO_TOKEN" {

@@ -1,6 +1,6 @@
 resource "digitalocean_ssh_key" "my_key" {
-  name       = "terraform-key"
-  public_key = file(var.ssh_pub_key_path)
+  name       = "my-key"
+  public_key = var.ssh_pub_key
 }
 
 resource "digitalocean_droplet" "droplet" {
