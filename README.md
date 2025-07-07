@@ -31,7 +31,7 @@ Before you begin, make sure you have the following:
 
 Create a new project in Doppler and add the following secrets:
 
-![Doppler Secret Setup](doppler_secret_setup.png)
+![Doppler Secret Setup](screenshots/doppler_secret_setup.png)
 
 - `DO_TOKEN` – Your DigitalOcean API token  
 - `TF_TOKEN_APP_TERRAFORM_IO` – Your Terraform Cloud API token  
@@ -44,7 +44,7 @@ Create a new project in Doppler and add the following secrets:
 
 In your Terraform Cloud workspace, add these variables:
 
-![Terraform Cloud Variables](terraform_cloud_variables.png)
+![Terraform Cloud Variables](screenshots/terraform_cloud_variables.png)
 
 - `ssh_pub_key` – Your public SSH key (used to access the Droplet)  
 - `DO_TOKEN` – Your DigitalOcean API token (same as in Doppler)
